@@ -20,9 +20,26 @@ h1#principal{
     text-align: center;
 }
 
-.importante{
+div > img{
+    display: none;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}
+
+div:hover > img{
+    display: block;
+}
+
+div:hover{
     color: red;
 }
+
 
 .normal{
 
