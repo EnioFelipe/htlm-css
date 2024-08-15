@@ -20,6 +20,19 @@ h1#principal{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+a::after{
+ content: ' [Link]';
+ text-decoration: none;
+}
+
 div > img{
     display: none;
 }
@@ -36,13 +49,8 @@ div:hover > img{
     display: block;
 }
 
-div:hover{
+div:hover.especial{
     color: red;
-}
-
-
-.normal{
-
 }
 
 .detalhe{
@@ -65,5 +73,3 @@ p{
     text-align: justify;
     text-indent: 30px;
 }
-
-
