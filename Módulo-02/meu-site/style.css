@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
 body{
-    background-color: rgba(144, 238, 144, 0.704);
+    background-color: rgba(195, 228, 195, 0.359);
     margin: 0px;
-
 }
 
 header{
@@ -59,10 +58,14 @@ aside{
     
 }
 
+footer > p {
+    margin: 0px;
+}
+
 footer{
     background-color: black;
     color: antiquewhite;
     text-align: center;
-    padding: 3px;
-    margin: 50px 0px;
+    padding: 10px;
+    margin: 20px 0px;
 }
