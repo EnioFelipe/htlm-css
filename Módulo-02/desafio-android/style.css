@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'droid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
 
 body{
     background-color: rgba(195, 228, 195, 0.359);
@@ -9,6 +13,7 @@ header{
     background: rgba(124, 220, 29, 0.54);
     margin-top: 0px;
     text-align: center;
+    font-family: droid;
 }
 
 nav > a{
@@ -38,7 +43,8 @@ main{
     border-right: 3px solid darkgreen;
     border-left: 3px solid darkgreen;
     border-bottom: 3px solid darkgreen;
-    margin: 0px 100px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section{
