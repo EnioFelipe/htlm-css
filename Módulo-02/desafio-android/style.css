@@ -27,29 +27,49 @@ body{
 }
 
 header{
-    background: rgb(197,235,214);
-    background: linear-gradient(180deg, rgba(197,235,214,1) 3%, rgba(61,219,132,1) 39%, rgba(6,61,30,1) 97%);
+    min-height: 150px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
     color: white;
     text-align: center;
     font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 2px black;
+   
+}
+
+header > h1{
+    font-size: 3em;
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
+}
+
+header > p{
+    font-size: 1.3em;
+    margin: auto;
+    padding: 10px;
+    max-width: 600px;
 }
 
 nav{
-    background-color: rgba(0, 100, 0, 0.488);
+    background-color: #063d1e24;
+    font-style: bold;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.438);
+    text-align: center;
 }
 
 nav > a{
     padding-right: 30px;
-    border-right: 2px solid rgba(0, 0, 0, 0.347);
     color: white;
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
+    padding: 3px 10px;
     
 }
 
 nav > a:hover{
-    text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.495);
+    text-decoration: none;
     color: white;
 }
 
@@ -67,10 +87,40 @@ a:hover{
 main{
     background-color: white;
     padding: 10px;
+    min-width: 320px;
+    max-width: 800px;
     margin: auto;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-family:var(--fonte-padrao);
     text-align: justify;
     text-indent: 10px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    margin:auto;
+    border: 10px solid white;
+}
+
+ol{
+    padding: 30px;
+}
+
+.bugdroid{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+    border: 10px solid white;
 }
 
 section{
