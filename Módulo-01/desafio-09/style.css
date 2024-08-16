@@ -1,14 +1,27 @@
 @charset "UTF-8";
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
 main{
     background-color: rgba(130, 171, 49, 0.119);
     text-align: center;
-    width: 650px;
+    width: 600px;
     margin: auto;
     padding: 10px;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.326);
 }
-body{
+/* body{
     background: rgb(255,199,74);
     background: linear-gradient(90deg, rgba(202, 142, 12, 0.495) 3%, rgba(184,140,44,1) 39%, rgba(61,47,15,1) 97%);
     font-family: Arial, Helvetica, sans-serif;
+} */
+
+div{
+    display: block;
+    width: 100%;
+    margin:auto;
+    padding: 0px;
 }
+
