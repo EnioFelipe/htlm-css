@@ -74,45 +74,51 @@ nav > a:hover{
     transition-duration: 0.7s;
 }
 
-a{
-    color: black;
-}
-
 a:hover{
     text-decoration: underline;
     color: blue;
 }
 
+main a{
+    background-color: var(--cor1);
+    color: black;
+    text-decoration: none;
+}
+
+footer a{
+    color: white;
+}
 
 
 main{
     background-color: white;
-    padding: 10px;
     min-width: 320px;
     max-width: 800px;
+    padding: 10px 15px;
     margin: auto;
     box-shadow: 0px 0px 10px black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family:var(--fonte-padrao);
     text-align: justify;
-    text-indent: 10px;
+    
+}
+
+main p{
+    text-indent: 30px;
+    line-height: 1.2em;
 }
 
 img{
     display: block;
     width: 100%;
     margin:auto;
-    border: 10px solid white;
-}
-
-ol{
-    padding: 30px;
+    padding: 15px 0px;
 }
 
 .bugdroid{
     display: block;
-    width: 50%;
+    max-width: 350px;
     margin: auto;
 }
 
@@ -125,24 +131,54 @@ iframe{
 }
 
 section{
-    background-color:var(--cor4);
-    padding-left:10px;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: droid;
+    text-indent: 10px;
 }
 
-article{
-    background-color: white;
-    padding: 0.1px 10px;
-    padding-bottom: 0px;
-}
-
-aside{
-    background-color: var(--cor3);
-    width: auto;
+.extra{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    margin: -10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-style: lighter;
+    font-family: droid;
+    text-align: center;
+    background-color: var(--cor4);
+    color: white;
     
 }
 
-footer > p {
-    margin: 0px;
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 13px;
+}
+
+aside p{
+    line-height: 1.3em;
+}
+
+aside ol{
+    list-style-type: "\2714";
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+aside a{
+    background-color: var(--cor4);
+    color: white;
+    text-decoration: none;
+}
+
+p.especial{
+    margin-top: 10px;
 }
 
 footer{
