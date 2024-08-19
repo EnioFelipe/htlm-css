@@ -57,6 +57,10 @@ main{
     font-family: var(--fonte-cordel);
 }
 
+main p{
+    padding-bottom: 20px;
+}
+
 div#img01{
     margin: 10px 0px 0p;
     background-image: url(imagens/background001.jpg);
