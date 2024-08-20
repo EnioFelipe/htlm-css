@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+main{
+    position: relative;
+    margin: auto;
+    height: 100vh;
+}
+
+section#tel{
+    position: absolute;
+    background-image: url(pacote-d013/imagens/frame-iphone.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 627px;
+    width: 311px;
+}
+
+iframe#tela{
+    position: relative;
+    height: 500px;
+    width: 268px;
+    top: 80px;
+    left: 22px;
+}
+
+section#opc a{
+    text-align: right;
+}
+
+section#opc img{
+    position: relative;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    width: 50px;
+}
