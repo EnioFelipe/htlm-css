@@ -46,6 +46,9 @@ iframe#tela{
 }
 
 section#opc{
+    position: relative;
+    top: 13em;
+    padding-left: 20px;
     width: 50px;
 }
 
@@ -69,8 +72,7 @@ section#opc a:hover{
     background-color: rgba(0, 0, 0, 0.541);
     border: 1px solid rgba(0, 0, 0, 0.644);
     transition: background-color 0.7s;
-
     border-radius: 50%;
-    border: 1.5px solid white;
+    border: 1.5px solid rgb(0, 0, 0);
     width: 50px;
 }
