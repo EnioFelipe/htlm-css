@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.img{
+    position: absolute;
+    width: 10vh;
+}
+
+img{
+    position: relative;
+    width: 10vh;
+    height: 20vh;
+    top: 20%;
+    left: 50%;
+}
+
+div.forms{
+    border: 2px solid black;
+    margin: 50px;
+    padding: 30px;
+}
