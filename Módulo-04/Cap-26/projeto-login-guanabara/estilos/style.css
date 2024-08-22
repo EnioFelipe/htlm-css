@@ -14,39 +14,45 @@ body, html{
 }
 
 main{
-    position: relative;
+    display: flex;
     width: 100vw;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-section#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+div#login{
+    display: flex;
+    flex-wrap: wrap;
+    
     overflow: hidden;
-
     background-color: aliceblue;
     width: 270px;
     height: 500px;
     border-radius: 15px;
     box-shadow: 3px 3px 10px black;
+    
 
     transition: width 2s, height 2s;
     transition: border-radius 1s;
     transition-timing-function: ease;
 }
 
-section#login > div#imagem{
-    display: block;
+div#login > div#imagem{
+    flex:auto;
     background-image: url(../imagens/avpaulista-fundo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom center;
-    height: 200px;
+    
+    width: 200px;
 }
 
-section#login > div#forms{
-    display: block;
-    padding: 10px;
+div#login > div#forms{
+    
+
+    margin:30px 30px 0px 30px;
+
 }
+
