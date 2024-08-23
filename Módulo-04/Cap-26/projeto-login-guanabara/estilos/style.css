@@ -41,16 +41,29 @@ div#login{
     transition-timing-function: ease;
 }
 
-
-
 div#login > div#imagem{
-    flex: 0 0 30vh;
+    flex: 1 1 ;
     background-image: url(../imagens/avpaulista-fundo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom center;
 }
 
+
+
+input[type=email]{
+    border-radius: 12px;
+    width: 200px;
+    height: 30px;
+    padding-left: 4px;
+}
+
+input[type=password]{
+    border-radius: 12px;
+    width: 200px;
+    height: 30px;
+    padding-left: 4px;
+}
 
 div#login > div#forms{
     align-self: center
