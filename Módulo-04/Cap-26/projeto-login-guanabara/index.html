@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
     <title>Login</title>
@@ -13,22 +17,27 @@
                 <div id="imagem">
                 </div>
                 <div id="forms" >
-                    <h1>Login</h1>
-                    <p>Seja bem-vindo!</p>
-                    <p>Realize o login para acessar</p>
+                    <div id="texto">
+                        <h1>Login</h1>
+                        <p>Seja bem-vindo!</p>
+                        <p>Realize o login para acessar</p>
+                    </div>
                     <div id="campos">
                         <form action="login.php" method="post" autocomplete="on">
                             <p>
+                                <span class="material-symbols-outlined">person</span>
+                                <input type="email" name="user" id="iduser" placeholder="Digite o seu e-mail" required [a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z])>
                                 <label for="iduser">e-mail:</label>
-                                <input type="email" name="user" id="iduser" placeholder="Digite o seu e-mail" >
                             </p>
                             <p>
+                                <span class="material-symbols-outlined">lock</span>
+                                <input type="password" name="pass" id="idpass" placeholder="Digite a sua senha" required minlength="8">
                                 <label for="idpass">Senha: </label>
-                                <input type="password" name="pass" id="idpass" placeholder="Digite a sua senha">
                             </p>
                                 <button type="submit">Entrar</button>
-                                <button type="submit">Esqueceu a senha?</button>
-                                <p>Ou crie uma conta</p>
+                                <button type="submit">Esqueci a senha <span class="material-symbols-outlined">mail</span></button>
+                                <p>ou</p>
+                                <button type="submit">Crie uma conta</button>
                     </div>
                 </div>
             </div>
