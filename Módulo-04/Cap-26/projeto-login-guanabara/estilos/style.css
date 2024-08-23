@@ -8,7 +8,7 @@
 }
 
 body, html{
-    background-color: rgba(43, 15, 69, 0.601);
+    background-color: rgba(44, 108, 146, 0.279);
     width: 100vw;
     height: 100vh;
 }
@@ -25,7 +25,7 @@ main{
 div#login{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     
     overflow: hidden;
@@ -42,7 +42,7 @@ div#login{
 }
 
 div#login > div#imagem{
-    flex: 1 1 ;
+    flex: 0 1 150px;
     background-image: url(../imagens/avpaulista-fundo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -66,7 +66,11 @@ input[type=password]{
 }
 
 div#login > div#forms{
-    align-self: center
+    align-self: center;
+}
+
+div#texto{
+    margin-bottom: 20px;
 }
 
 h1{
@@ -82,16 +86,41 @@ label{
 }
 
 form button[type=submit]{
-    background-color: rgba(137, 43, 226, 0.482);
+    background-color:  rgba(39, 94, 126, 0.316);
     width: 100%;
     padding: 2px;
-    margin-top: 6px;
+    margin-top: 20px;
     margin-bottom: 5px;
     border-radius: 12px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.612);
+    font-size: 1em;
     cursor: pointer;
 }
 
 form button[type=submit]:hover{
-    background-color: blueviolet;
+    background-color: rgba(30, 83, 113, 0.811);
+    color: white;
+    font-weight: 600;
+}
+
+a {
+    display: block;
+    color: black;
+    text-align: center;
+    background-color: rgba(137, 43, 226, 0.482);
+    width: 100%;
+    padding-left: 20px;
+    padding: 2px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    border-radius: 12px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.612);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(137, 43, 226);
+    color: white;
 }
