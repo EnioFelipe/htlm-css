@@ -24,7 +24,9 @@ main{
 
 div#login{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
     
     overflow: hidden;
     background-color: aliceblue;
@@ -40,19 +42,14 @@ div#login{
 }
 
 div#login > div#imagem{
-    flex:auto;
+    flex: 0 0 30vh;
     background-image: url(../imagens/avpaulista-fundo.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom center;
-    
-    width: 200px;
 }
+
 
 div#login > div#forms{
-    
-
-    margin:30px 30px 0px 30px;
-
+    align-self: center
 }
-

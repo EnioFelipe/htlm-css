@@ -3,19 +3,44 @@
 @media  screen and (min-width:720px) and (max-width: 992px){
     
     div#login{
+        gap: 0px;
+        flex-direction: row;
         width: 850px;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
-    
+
+    div#login > div#imagem{
+        flex: auto;
+    }
+
+    div#login > div#forms{
+        margin: 30px 30px 10px 30px;
+        align-self: center;
+    }
 }
 
 @media  screen and (min-width:992px) {
     div#login{
+        gap: 35px;
+        flex-direction: row;
+        flex-wrap: nowrap;
         width: 1100px;
         border-top-left-radius: 55px;
         border-bottom-left-radius: 55px;
     }
+
+    div#login > div#imagem{
+        flex: 1 1 40vw;
+    }
     
+    div#login > div#forms{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: justify;
+        flex: 1 1 50px;
+    }
     
 }
