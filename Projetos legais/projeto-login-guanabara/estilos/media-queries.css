@@ -1,60 +1,84 @@
 @charset "UTF-8";
 
-@media  screen and (min-width:720px) and (max-width: 992px){
-    
-    div#login{
+@media screen and (min-width: 720px) and (max-width: 992px) {
+    div#login {
         flex-direction: row;
         width: 850px;
+        height: 100vh;
+        font-size: 1.2em;
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
 
-    div#login > div#imagem{
+    div#login > div#imagem {
         flex: auto;
     }
 
-    div#login > div#forms{
+    div#login > div#forms {
         margin: 30px 30px 10px 30px;
         align-self: center;
     }
 
-    div#texto{
+    div#texto {
         margin-bottom: 20px;
     }
-
-    form button[type=submit]{
-        margin: 12px 0px 0px 0px
-    }
+    
 }
 
-@media  screen and (min-width:992px) {
-    
-    
-    div#login{
-        gap: 25px;
+@media screen and (min-width: 992px) {
+    div#login {
         flex-direction: row-reverse;
         flex-wrap: nowrap;
         justify-content: center;
-        width: 1100px;
-        border-top-left-radius: 55px;
-        border-bottom-left-radius: 55px;
+        height: 100vh;
+        width: 100vw;
+        font-size: 1.3em;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
-    div#login > div#imagem{
-        flex: auto;
+    div#login > div#imagem {
+        flex: 3 1 auto;
     }
-    
-    div#login > div#forms{
+
+    div#login > div#forms {
+        flex: auto;
         margin: 25px 3px 10px 30px;
         align-self: center;
     }
 
-    div#texto{
+    div#texto {
         margin-bottom: 20px;
     }
 
-    form button[type=submit]{
-        gap: 30px;
+    div#campos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button[type=submit] {
+        border: 1px solid rgba(0, 0, 0, 0.438);
+        display: block;
+        margin: auto;
+        max-width: 300px;
+    }
+
+    input.campos {
+        border-radius: 8px;
+        width: 300px;
+        height: 2.5em;
+        padding-left: 4px;
+    }
+
+    .espaço {
+        margin-top: 0em;
+    }
+
+    a,p {
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 0.em;
     }
 }
     
