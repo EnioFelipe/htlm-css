@@ -36,18 +36,23 @@ header{
    
 }
 
-header > h1{
+header > h1 {
     font-size: 3em;
-    margin: auto;
-    padding: 10px;
-    max-width: 600px;
 }
 
-header > p{
-    font-size: 1.3em;
-    margin: auto;
-    padding: 10px;
-    max-width: 600px;
+header > p {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 2em;
+    }
+
+    header > p {
+        font-size: 1em;
+    }
 }
 
 nav{
@@ -55,6 +60,7 @@ nav{
     font-style: bold;
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.438);
     text-align: center;
+    margin-top: 65px;
 }
 
 nav > a{
@@ -191,10 +197,13 @@ p.especial{
     margin-bottom: 10px;
 }
 
-footer{
+footer {
     background-color: black;
-    color: antiquewhite;
+    color: white;
     text-align: center;
-    padding: 10px;
-    margin: 20px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    position: relative;
+    top: 2em;
+    bottom: 0;
 }
