@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media  screen and (min-width:720px) and (max-width: 992px){
+    
+    div#login{
+        flex-direction: row;
+        width: 850px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    div#login > div#imagem{
+        flex: auto;
+    }
+
+    div#login > div#forms{
+        margin: 30px 30px 10px 30px;
+        align-self: center;
+    }
+
+    div#texto{
+        margin-bottom: 20px;
+    }
+
+    form button[type=submit]{
+        margin: 12px 0px 0px 0px
+    }
+}
+
+@media  screen and (min-width:992px) {
+    
+    
+    div#login{
+        gap: 25px;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 1100px;
+        border-top-left-radius: 55px;
+        border-bottom-left-radius: 55px;
+    }
+
+    div#login > div#imagem{
+        flex: auto;
+    }
+    
+    div#login > div#forms{
+        margin: 25px 3px 10px 30px;
+        align-self: center;
+    }
+
+    div#texto{
+        margin-bottom: 20px;
+    }
+
+    form button[type=submit]{
+        gap: 30px;
+    }
+}
+    
